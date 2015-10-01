@@ -43,7 +43,7 @@ public class HelloServlet extends HttpServlet {
 //		resp.sendRedirect("http://www.baidu.com");
 		
 		out.close();
-
+//		nothing...
 	}
 
 	@Override

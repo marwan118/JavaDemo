@@ -44,6 +44,7 @@ public class HelloServlet extends HttpServlet {
 		
 		out.close();
 //		nothing...
+//		nothing2...
 	}
 
 	@Override

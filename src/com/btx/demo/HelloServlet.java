@@ -33,7 +33,7 @@ public class HelloServlet extends HttpServlet {
 		
 		
 		Collection<String> respNames =  resp.getHeaderNames();
-		out.println("list all resp headers:");
+		out.println("\nlist all resp headers:");
 		for (String name : respNames)
 		{
 			out.println(name+":" + resp.getHeader(name));
@@ -45,6 +45,7 @@ public class HelloServlet extends HttpServlet {
 		out.close();
 //		nothing...
 //		nothing2...
+//		nothing3...
 	}
 
 	@Override

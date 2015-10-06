@@ -24,16 +24,17 @@ public class HelloServlet extends HttpServlet {
 	
 		
 		PrintWriter out = new PrintWriter(resp.getOutputStream());
-		out.println("list all req headers:");
+		out.println("<h1>list all req headers:</h1>");
 		Enumeration<String> reqNames = req.getHeaderNames();
+		
 		while (reqNames.hasMoreElements()) {
 			String name = reqNames.nextElement();
-			out.println(name+":" + req.getHeader(name));
+			out.println("<p>"+name+":" + req.getHeader(name)+"</p>");
 		}
 		
 		
 		Collection<String> respNames =  resp.getHeaderNames();
-		out.println("\nlist all resp headers:");
+		out.println("\n<h1>list all resp headers:</h1>");
 		for (String name : respNames)
 		{
 			out.println(name+":" + resp.getHeader(name));
